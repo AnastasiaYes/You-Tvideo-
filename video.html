@@ -18,7 +18,12 @@
                 </svg>
             </a>
 
-            <a href="/favorite.html" class="header__link header__link_favorite">Похожие видео</a>
+            <a href="/favorite.html" class="header__link header__link_favorite">
+                <span>Избранное</span>
+                <svg class="header__icon">
+                    <use xlink:href="/image/sprite.svg#star-ob"></use>
+                </svg>
+            </a>
         </div>
     </header>
 
@@ -27,42 +32,51 @@
         <section class="search">
             <div class="container search__container">
                 <form class="search__form">
-                    <label class="search__label">
-                        <input type="search" class="search__input">
-                        <button class="search_btn" type="submit">поиск</button>
-                    </label>
+                    <input type="search" class="search__input">
+                    <button class="search_btn" type="submit">
+                        <span>поиск</span>
+                        <svg class="search__icon">
+                            <use xlink:href="/image/sprite.svg#search"></use>
+                        </svg>
+                    </button>
                 </form>
             </div>
         </section>
 
         <section class="video">
-            <div class="container video__container">
-                <iframe class="video__iframe"></iframe>
+            <div class="container">
+                <div class="video_player">
+                    <iframe class="video__iframe" src="https://www.youtube.com/embed/yci475Vwc10?si=eb8y5PPGSGkrzy-j" frameborder="0" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                </div>
+                <div class="video__content">
+                    <h2 class="video__title">Философия Идущего к реке</h2>
 
-                <span class="video__favorite">В избранном</span>
+                    <p class="video__channel">Правое полушарие интроверта</p>
 
-                <h2 class="video__title">Философия Идущего к реке</h2>
+                    <p class="video__info">
+                        <span class="video__views">1 575 581 просмотр </span>
+                        <span class="video__data"> Дата премьеры: 16 авг. 2024 г.</span>
+                    </p>
 
-                <p class="video__channel">Правое полушарие интроверта</p>
-                <div class="video__additional-inf">
-                    <p class="video__additional-inf__viewing">1 575 581 просмотр</p>
-                    <p class="video__additional-inf__date">Дата премьеры: 16 авг. 2024г.</p>
+                    <p class="video__description">Смотрите наш курс-саммари «Как понимать философию» фоном.</p>
                 </div>
 
-                <p class="video__description">Смотрите наш курс-саммари «Как понимать философию» фоном.</p>
+
+                <span class="video__favorite">В избранном</span>
             </div>
         </section>
 
 
         <section class="video-list">
             <div class="container">
-                <h2 class="video-list__title">Избранное</h2>
+                <h2 class="video-list__title">Похожие видео</h2>
 
                 <ul class="video-list__items">
                     <li class="video-list__item">
                         <article class="video-card">
                             <a href="" class="video-card__link">
-                                <img src="image/img1.jpg" alt="Превью Философия Идущего к реке" class="video-card__thumbnail">
+                                <img src="image/img1.jpg" alt="Превью Философия Идущего к реке"
+                                     class="video-card__thumbnail">
 
                                 <h3 class="video-card__title">Превью Философия Идущего к реке</h3>
 
@@ -70,14 +84,20 @@
 
                                 <p class="video-card__duration">31 мин 25 сек</p>
                             </a>
-                            <button class="video-card__favorite" type="button"></button>
+                            <button class="video-card__favorite" type="button">
+                                <svg class="search__icon">
+                                    <use class="star-o" xlink:href="/image/sprite.svg#star-ob"></use>
+                                    <use class="star" xlink:href="/image/sprite.svg#star"></use>
+                                </svg>
+                            </button>
                         </article>
                     </li>
 
                     <li class="video-list__item">
                         <article class="video-card">
                             <a href="" class="video-card__link">
-                                <img src="image/img2.jpg" alt="Превью Как выжить в Средние века?" class="video-card__thumbnail">
+                                <img src="image/img2.jpg" alt="Превью Как выжить в Средние века?"
+                                     class="video-card__thumbnail">
 
                                 <h3 class="video-card__title">Как выжить в Средние века?</h3>
 
@@ -85,9 +105,36 @@
 
                                 <p class="video-card__duration">31 мин 25 сек</p>
                             </a>
-                            <button class="video-card__favorite" type="button"></button>
+                            <button class="video-card__favorite" type="button" aria-label="Добавить в избранное">
+                                <svg class="search__icon">
+                                    <use class="star-o" xlink:href="/image/sprite.svg#star-ob"></use>
+                                    <use class="star" xlink:href="/image/sprite.svg#star"></use>
+                                </svg>
+                            </button>
                         </article>
                     </li>
+
+                    <li class="video-list__item">
+                        <article class="video-card">
+                            <a href="" class="video-card__link">
+                                <img src="image/img1.jpg" alt="Превью Философия Идущего к реке"
+                                     class="video-card__thumbnail">
+
+                                <h3 class="video-card__title">Превью Философия Идущего к реке</h3>
+
+                                <p class="video-card__channel">Правое полушарие интроверта</p>
+
+                                <p class="video-card__duration">31 мин 25 сек</p>
+                            </a>
+                            <button class="video-card__favorite" type="button">
+                                <svg class="search__icon">
+                                    <use class="star-o" xlink:href="/image/sprite.svg#star-ob"></use>
+                                    <use class="star" xlink:href="/image/sprite.svg#star"></use>
+                                </svg>
+                            </button>
+                        </article>
+                    </li>
+
                 </ul>
             </div>
         </section>
