@@ -6,6 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>You-Tvideo — Удобный видеохостинг для тебя </title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
@@ -48,21 +51,30 @@
                 <div class="video_player">
                     <iframe class="video__iframe" src="https://www.youtube.com/embed/yci475Vwc10?si=eb8y5PPGSGkrzy-j" frameborder="0" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
                 </div>
-                <div class="video__content">
-                    <h2 class="video__title">Философия Идущего к реке</h2>
 
-                    <p class="video__channel">Правое полушарие интроверта</p>
+                <div class="video__container">
+                    <div class="video__content">
+                        <h2 class="video__title">Философия Идущего к реке</h2>
 
-                    <p class="video__info">
-                        <span class="video__views">1 575 581 просмотр </span>
-                        <span class="video__data"> Дата премьеры: 16 авг. 2024 г.</span>
-                    </p>
+                        <p class="video__channel">Правое полушарие интроверта</p>
 
-                    <p class="video__description">Смотрите наш курс-саммари «Как понимать философию» фоном.</p>
+                        <p class="video__info">
+                            <span class="video__views">1 575 581 просмотр </span>
+                            <span class="video__data"> Дата премьеры: 16 авг. 2024 г.</span>
+                        </p>
+
+                        <p class="video__description">Смотрите наш курс-саммари «Как понимать философию» фоном.</p>
+                    </div>
+
+                    <button href="/favorite.html" class="video__link video__link_active">
+                        <span class="video__no-favorite">Избранное</span>
+                        <span class="video__favorite">В избранном</span>
+                        <svg class="video__icon">
+                            <use xlink:href="/image/sprite.svg#star-ob"></use>
+                        </svg>
+                    </button>
                 </div>
 
-
-                <span class="video__favorite">В избранном</span>
             </div>
         </section>
 
@@ -85,7 +97,7 @@
                                 <p class="video-card__duration">31 мин 25 сек</p>
                             </a>
                             <button class="video-card__favorite" type="button">
-                                <svg class="search__icon">
+                                <svg class="video-card__search__icon">
                                     <use class="star-o" xlink:href="/image/sprite.svg#star-ob"></use>
                                     <use class="star" xlink:href="/image/sprite.svg#star"></use>
                                 </svg>
@@ -106,7 +118,7 @@
                                 <p class="video-card__duration">31 мин 25 сек</p>
                             </a>
                             <button class="video-card__favorite" type="button" aria-label="Добавить в избранное">
-                                <svg class="search__icon">
+                                <svg class="video-card__search__icon">
                                     <use class="star-o" xlink:href="/image/sprite.svg#star-ob"></use>
                                     <use class="star" xlink:href="/image/sprite.svg#star"></use>
                                 </svg>
@@ -127,7 +139,7 @@
                                 <p class="video-card__duration">31 мин 25 сек</p>
                             </a>
                             <button class="video-card__favorite" type="button">
-                                <svg class="search__icon">
+                                <svg class="video-card__search__icon">
                                     <use class="star-o" xlink:href="/image/sprite.svg#star-ob"></use>
                                     <use class="star" xlink:href="/image/sprite.svg#star"></use>
                                 </svg>
